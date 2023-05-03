@@ -125,6 +125,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/etc/configstore/vpp.configstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/vpp.configstore.xml \
     vendor/xiaomi/sweet/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/xiaomi/sweet/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
+    vendor/xiaomi/sweet/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
     vendor/xiaomi/sweet/proprietary/vendor/etc/dsi_k6_38_0c_0a_fhd_dsc_video_display_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_k6_38_0c_0a_fhd_dsc_video_display_mi.xml \
     vendor/xiaomi/sweet/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
     vendor/xiaomi/sweet/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
@@ -540,6 +541,8 @@ PRODUCT_PACKAGES += \
     audio.primary.sm6150 \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
+    libAlacSwDec \
+    libApeSwDec \
     libMpeg4SwEncoder \
     libOmxAacDec \
     libOmxAlacDec \
@@ -550,9 +553,11 @@ PRODUCT_PACKAGES += \
     libOmxApeDecSw \
     libOmxDsdDec \
     libOmxEvrcDec \
+    libOmxG711Dec \
     libOmxQcelp13Dec \
     libOmxSwVdec \
     libOmxSwVencMpeg4 \
+    libOmxVideoDSMode \
     libOmxVpp \
     libOmxWmaDec \
     liba2dpoffload \
@@ -754,7 +759,6 @@ PRODUCT_PACKAGES += \
     libconfigdb \
     libcpion \
     libdataitems \
-    libdisplayqos \
     libdpmqmihal \
     libdrmfs \
     libdrmtime \
@@ -764,7 +768,6 @@ PRODUCT_PACKAGES += \
     libft2vendor \
     libgdtap \
     libhdcpsrm \
-    libhdr_tm \
     libhexagon_nn_stub \
     libhta \
     libhta_hexagon_runtime \
@@ -821,7 +824,6 @@ PRODUCT_PACKAGES += \
     libqdp \
     libqisl \
     libqrtr \
-    libqseed3 \
     libqsocket \
     libqtikeymaster4 \
     librcc \
@@ -832,13 +834,7 @@ PRODUCT_PACKAGES += \
     libril-qc-logger \
     librilqmiservices \
     librpmb \
-    libsdedrm \
     libsdk_sr \
-    libsdm-color \
-    libsdm-colormgr-algo \
-    libsdm-diag \
-    libsdm-disp-vndapis \
-    libsdmextension \
     libsdsprpc \
     libsensorslog \
     libsnpe_adsp \
@@ -861,7 +857,6 @@ PRODUCT_PACKAGES += \
     libsystem_health_mon \
     libthermalclient \
     libtime_genoff \
-    libtinyxml2_1 \
     libtriplecam_video_optical_zoom \
     libtrustedapploader \
     libultrasound \
