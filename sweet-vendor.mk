@@ -532,6 +532,7 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation_stub \
     libscveObjectTracker \
     libscveObjectTracker_stub \
+    libsecureui \
     libswvdec \
     libvpphvx \
     libvpplibrary \
