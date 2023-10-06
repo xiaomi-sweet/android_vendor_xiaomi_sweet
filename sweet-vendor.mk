@@ -855,6 +855,7 @@ PRODUCT_PACKAGES += \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
+    libprotobuf-cpp-lite-3.9.1 \
     libqcbor \
     libqcmaputils \
     libqcrilFramework \
